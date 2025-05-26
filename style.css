@@ -1,0 +1,68 @@
+/* Estilos básicos para curriculum */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    padding: 32px;
+}
+
+h1, h2, h3 {
+    color: #2a4d69;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 24px;
+    border-bottom: 2px solid #e7eaf0;
+    padding-bottom: 4px;
+}
+
+.section {
+    margin-bottom: 24px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+a {
+    color: #4f8ef7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 16px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.1em;
+    }
+}
