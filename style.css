@@ -2,25 +2,74 @@
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f4f6f8;
+    background: hwb(211 10% 75% / 0.595);
     color: #222;
     margin: 0;
     padding: 0;
 }
 nav {
     margin-bottom: 24px;
+    padding: 5px 32px;
+    background: #2f4268; /* Color de fondo del nav */
+    border-radius: 12px; /* Bordes redondeados para el nav */   
 }
 
-nav ul {
-    list-style: none;
+
+
+#header {
+    display: flex;
+    justify-content: space-between; /* Alinea el contenido a los extremos */
+    align-items: center; /* Centra verticalmente el contenido */
+    background: #2a4d69; /* Color de fondo del header */ 
+    margin: 24px 24px 0 24px; /* Agrega espacio alrededor del header */
+    border-radius: 12px;       /* Opcional: bordes redondeados para mejor apariencia */
+}
+  
+
+
+
+#header h1 {
+    color: #fff; /* Color del texto del título */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 10px 0px; /* Espaciado interno */
+}
+#header .info{
+    color: #fff; /* Color del texto */
+    padding: 50px; /* Espacio interno */    
+}
+
+
+/* Header con foto a la derecha */
+
+#photo {
+    width: 10%;
+    border-radius: 50%;
+    float: right;
+    margin: 10%;
+    align-items : center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+ 
+#photo:hover {
+    transform: scale(1.05);
+}
+
+
+#nav ul {
+    display: flex;
+    justify-content: center;       /* Centra los elementos horizontalmente */
+    gap: 30px;                     /* Espacio uniforme entre cada <li> */
+    list-style: none;             /* Quita los puntos de lista */
     padding: 0;
     margin: 0;
-    display: flex;
-    gap: 20px;
 }
 
-nav li {
-    margin: 0;
+#nav li a {
+    text-decoration: none;        /* Quita el subrayado */
+    color: #000;                  /* Cambia el color según prefieras */
+    font-weight: bold;
 }
 
 nav a {
@@ -56,7 +105,7 @@ h1 {
 h2 {
     font-size: 1.5em;
     margin-top: 24px;
-    border-bottom: 2px solid #e7eaf0;
+    border-bottom: 2px solid #275bc4;
     padding-bottom: 4px;
 }
 
