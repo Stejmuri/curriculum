@@ -1,5 +1,83 @@
 /* Estilos básicos para curriculum */
 
+<section id="contacto">
+  <h2>Contáctame</h2>
+  <form id="formulario-contacto" action="https://formspree.io/f/tu_codigo" method="POST" novalidate>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required placeholder="tu@email.com" />
+
+    <label for="asunto">Asunto:</label>
+    <input type="text" id="asunto" name="asunto" required placeholder="Motivo del mensaje" />
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje..."></textarea>
+
+    <button type="submit">Enviar</button>
+    <p id="form-msg" role="alert" style="display:none;"></p>
+  </form>
+</section>
+
+<style>
+  #contacto {
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+
+  form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input, textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+<script>
+  const form = document.getElementById('formulario-contacto');
+  const msg = document.getElementById('form-msg');
+
+  form.addEventListener('submit', function (e) {
+    if (!form.checkValidity()) {
+      e.preventDefault();
+      msg.textContent = 'Por favor, completa todos los campos correctamente.';
+      msg.style.display = 'block';
+      msg.style.color = 'red';
+    } else {
+      msg.textContent = 'Enviando...';
+      msg.style.display = 'block';
+      msg.style.color = 'black';
+    }
+  });
+</script>
+
+
+
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: hwb(211 10% 75% / 0.595);
