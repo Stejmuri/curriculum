@@ -211,12 +211,14 @@
             </section>
 
             <section id="mapa">
-                <h2 class="subtitle">Ubicación</h2>
+                <div>
+                    <h2 class="subtitle">Ubicación</h2>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.810640228753!2d-79.92235928476248!3d-2.156331039800545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d71e90d2b63bf%3A0x83cc3f0e70312cb8!2sGuayaquil%2C%20Ecuador!5e0!3m2!1ses!2sus!4v1685353387943!5m2!1ses!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.0738653934434!2d-79.8898937!3d-2.154067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d1e4e6b7e7b%3A0x2e6b8b2e1fa89bb2!2sDimquality%20S.A.%2C%20Guayaquil%2C%20Ecuador!5e0!3m2!1ses!2sec!4v1717690000000!5m2!1ses!2sec"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </section>
-
+            
             <section id="contacto">
                 <h2 class="subtitle">Contacto y Aplicación</h2>
 
@@ -229,24 +231,32 @@
                     <label for="email">Correo electrónico:<span style="color:red">*</span></label><br>
                     <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com"><br><br>
 
+                    <!-- Razón -->
+                    <label for="razon">Razón:<span style="color:red">*</span></label>
+                    <select id="razon" name="razon" required>
+                        <option value disabled selected>Elige una opción</option>
+                        <option value="trabajo">Oferta de trabajo</option>
+                        <option value="practicas">Invitación</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <br><br>
+                    
+                    <!-- Preferencias de contacto -->
+                    <label>Preferencia de contacto:<span style="color:red">*</span></label>
+                    <label>
+                        <input type="radio" name="metodoContacto" value="email" required onchange="showContactInput(this.value)">
+                        Email
+                    </label>
+                    <label>
+                        <input type="radio" name="metodoContacto" value="telefono" required onchange="showContactInput(this.value)">
+                        Teléfono
+                    </label>
+                    <br><br>
+                    
                     <!-- Mensaje -->
-                    <label for="mensaje">Mensaje:</label><br>
-                    <textarea id="mensaje" name="mensaje" rows="4"
-                        placeholder="Escribe un mensaje o consulta..."></textarea><br><br>
-
-                    <!-- Video -->
-                    <label for="video">Sube un video de presentación (opcional):</label><br>
-                    <input type="file" id="video" name="video" accept="video/*"><br>
-                    <small>Formatos recomendados: MP4, WebM. Duración sugerida: 30-60 segundos.</small><br><br>
-
-                    <!-- Imagen -->
-                    <label for="imagen">Sube una imagen (opcional):</label><br>
-                    <input type="file" id="imagen" name="imagen" accept="image/*"><br>
-                    <small>Puedes subir tu foto profesional o una captura de tu proyecto.</small><br><br>
-
-                    <!-- Ubicación -->
-                    <label for="ubicacion">Ubicación (ciudad o región):</label><br>
-                    <input type="text" id="ubicacion" name="ubicacion" placeholder="Ej. Quito, Ecuador"><br><br>
+                    <label for="message">Envíame un mensaje:<span style="color:red">*</span></label>
+                    <textarea id="message" name="mensaje" rows="10" cols="30" placeholder="Como puedo ayudarte." required></textarea>
+                    <br><br>
 
                     <!-- Botón -->
                     <button type="submit">Enviar</button>
