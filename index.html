@@ -17,7 +17,7 @@
     <nav id="nav">
         <ul>
             <li><a href="#perfil">Perfil</a></li>
-            <li><a href="#experiencia">Experiencia Laboral</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#educacion">Educación</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#proyectos">Proyectos</a></li> <!-- AGREGADO -->
@@ -28,9 +28,9 @@
     <header id="header">
         <div class="info">
             <h1 id="title">Steven Murillo</h1>
-            <p>Email: stejmuri@espol.edu.ec</p>
-            <p>Tel: +593 963 107 998</p>
-            <p>Guayaquil, Ecuador</p>
+            <p>Email: <a href="mailto:stejmuri@espol.edu.ec">stejmuri@espol.edu.ec</a></p>
+            <p>Tel: <a href="https://wa.me/593963107998" target="_blank">+593 963 107 998</a></p>
+            <p>Dirección: Guayaquil, Ecuador</p>
         </div>
         <div class="fotodeperfil">
             <img id="photo" src="StevenM.jpg" alt="Foto de perfil de Steven Murillo">
@@ -41,91 +41,127 @@
 
         <section id="perfil">
             <h2 class="subtitle">Resumen</h2>
-            <p>Estudiante de Ingeniería en Computación en ESPOL. Interesado en oportunidades para aplicar y ampliar mis
-                conocimientos técnicos en entornos profesionales reales.</p>
-
-            <h2 class="subtitle">Información de Contacto</h2>
+            <p>Estudiante de Ingeniería en Computación en la Escuela Superior Politecnica del Litoral. Interesado en
+                oportunidades para aplicar y ampliar mis
+                conocimientos técnicos en entornos profesionales reales.
+            </p>
             <p>
-                Para más información, visite
-                <a href="#" target="_blank">mi sitio web</a>.
+                Responsable, proactivo, con experiencia en entornos académicos y administrativos. Capacidad para
+                adaptarme y aprender rápidamente nuevas tecnologías.
             </p>
 
-            <h2 class="subtitle">Perfil Profesional</h2>
-            <p>Responsable, proactivo, con experiencia en entornos académicos y administrativos. Capacidad para
-                adaptarme y aprender rápidamente nuevas tecnologías.</p>
-
-
-            <!-- contenido previo -->
-            <video width="320" height="240" controls>
-                <source src="video_presentacion.mp4" type="video/mp4">
-                Tu navegador no soporta video HTML5.
-            </video>
-        </section>
-        </section>
-
-        <section id="experiencia">
-            <h2 class="subtitle">Experiencia Laboral</h2>
-            <ul>
-                <li>
-                    <strong>Salvavidas</strong> – Wilderness Resort & Golf (2025)<br>
-                    Surpervición y gestión de las diversas atracciones del waterpark.
-                </li>
-                <li>
-                    <strong>Ayudante de Laboratorio</strong> – ESPOL (2024 - 2025)<br>
-                    Gestión de accesos y recursos en laboratorios; carga de libros virtuales en plataforma académica.
-                </li>
-                <li>
-                    <strong>Cocinero</strong> – Hilton Myrtle Beach Resort (2024)<br>
-                    Elaboración y preparación de la comida del día tanto para el cliente como para los trabajadores.
-                </li>
-                <li>
-                    <strong>Agente de Importación</strong> – Across The Board (2021 - 2021)<br>
-                    Coordinación de trámites aduaneros y pagos de aranceles; gestión documental de importaciones.
-                </li>
-                
-            </ul>
-        </section>
-
-        <section id="educacion">
-            <h2 class="subtitle">Educación</h2>
-            <ul>
-                <li>
-                    <strong>Ingeniería en Computación</strong> – ESPOL (2023 - Actualidad)
-                </li>
-                <li>
-                    <strong>Ingeniería en Mecatrónica</strong> – ESPOL (2019 - 2023)
-                </li>
-                <li>
-                    <strong>Técnico Contable</strong> – Unidad Educativa Provincia de Tungurahua (2012 - 2018)
-                </li>
-            </ul>
-        </section>
-
-        <section id="habilidades">
-            <h2 class="subtitle">Habilidades</h2>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Gestión de sistemas</li>
-                <li>Trabajo en equipo</li>
-                <li>Comunicación efectiva</li>
-            </ul>
         </section>
 
         <section id="idiomas">
             <h2 class="subtitle">Idiomas</h2>
-            <ul>
-                <li>Inglés – Intermedio</li>
-                <li>Francés – Básico</li>
-            </ul>
+            <div class="idioma">
+                <span>Español – Nativo</span>
+                <div class="barra-idioma">
+                    <div class="progreso" style="width: 100%"></div>
+                </div>
+            </div>
+            <div class="idioma">
+                <p>Inglés – Intermedio</p>
+                <div class="barra-idioma">
+                    <div class="progreso" style="width: 70%"></div>
+                </div>
+            </div>
+            <div class="idioma">
+                <span>Francés – Básico</span>
+                <div class="barra-idioma">
+                    <div class="progreso" style="width: 35%"></div>
+                </div>
+            </div>
         </section>
 
-        <!-- SECCIÓN AGREGADA -->
-        <section id="premios">
-            <h2 class="subtitle">Premios y Reconocimientos</h2>
-            <ul>
-                <li>Beca de Excelencia – ESPOL, 2023</li>
-                <li>Reconocimiento al Mejor Proyecto de Curso – 2022</li>
-            </ul>
+
+        <section id="experiencia">
+            <h2 class="subtitle">Experiencia</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Posición</th>
+                        <th>Empresa</th>
+                        <th>Año</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Salvavidas</td>
+                        <td>Wilderness Resort & Golf</td>
+                        <td>2025</td>
+                        <td>Supervisión y gestión de las diversas atracciones del waterpark.</td>
+                    </tr>
+                    <tr>
+                        <td>Ayudante de Laboratorio</td>
+                        <td>ESPOL</td>
+                        <td>2024 - 2025</td>
+                        <td>Gestión de accesos y recursos en laboratorios; carga de libros virtuales en plataforma
+                            académica.</td>
+                    </tr>
+                    <tr>
+                        <td>Cocinero</td>
+                        <td>Hilton Myrtle Beach Resort</td>
+                        <td>2024</td>
+                        <td>Elaboración y preparación de la comida del día tanto para el cliente como para los
+                            trabajadores.</td>
+                    </tr>
+                    <tr>
+                        <td>Agente de Importación</td>
+                        <td>Across The Board</td>
+                        <td>2021</td>
+                        <td>Coordinación de trámites aduaneros y pagos de aranceles; gestión documental de
+                            importaciones.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="educacion">
+            <h2 class="subtitle">Educación</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Grado</th>
+                        <th>Institución</th>
+                        <th>Año</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ingeniería en Computación</td>
+                        <td>Escuela Superior Politecnica del Litoral</td>
+                        <td>2023 - Actualidad</td>
+                    </tr>
+                    <tr>
+                        <td>Ingeniería en Mecatrónica</td>
+                        <td>Escuela Superior Politecnica del Litoral</td>
+                        <td>2019 - 2023</td>
+                    </tr>
+                    <tr>
+                        <td>Técnico Contable</td>
+                        <td>Unidad Educativa Provincia de Tungurahua</td>
+                        <td>2012 - 2018</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="habilidades">
+            <h2 class="subtitle">Habilidades</h2>
+            <div class="habilidades">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"
+                    width="32" height="32">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R" width="32"
+                    height="32">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"
+                    width="32" height="32">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" width="32"
+                    height="32">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="Ruby"
+                    width="32" height="32">
+            </div>
         </section>
 
         <!-- SECCIÓN AGREGADA -->
@@ -136,70 +172,86 @@
                 <li><strong>Blog Personal</strong> – Sitio web para compartir contenido educativo.</li>
             </ul>
         </section>
-
         <!-- SECCIÓN AGREGADA -->
         <section id="referencias">
             <h2 class="subtitle">Referencias</h2>
-            <article>
-                <blockquote>"Steven demostró ser una persona proactiva, puntual y siempre dispuesta a colaborar."
-                </blockquote>
-                <p><strong>Ing. Juan Pérez</strong> – Supervisor de Laboratorio, ESPOL</p>
-            </article>
-            <article>
-                <blockquote>"Una excelente actitud para el trabajo en equipo y una rápida capacidad de aprendizaje."
-                </blockquote>
-                <p><strong>Lic. Marta López</strong> – Coordinadora Académica, ESPOL</p>
-            </article>
-            <article>
-                <blockquote>"Steven mostró liderazgo y responsabilidad en el manejo de procesos logísticos."
-                </blockquote>
-                <p><strong>Sr. Carlos Andrade</strong> – Gerente de Logística, Across The Board</p>
-            </article>
-        </section>
+            <section class="section">
+            <div class="section-cards">
+                <div class="section-card">
+                <img id="cardImage"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/01/59/b8/wilderness-resort-new.jpg?w=1400&h=-1&s=1"
+                    alt="">
+                <h2>Lenin Urgiles</h2>
+                <p>Supervisor del Waterpark, Wilderness Golf & Resort.<br>
+                    "Steven demostró ser una persona proactiva, puntual y siempre dispuesta a colaborar."</p>
+                </div>
+                <div class="section-card">
+                <img id="cardImage"
+                    src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/WSUPM3C7QNMKDIYKCMRDDUMWYU.jpg"
+                    alt="">
+                <h2>Ricardo Fonseca</h2>
+                <p>Store Manager, Michael Kors.<br>
+                    "Una excelente actitud para el trabajo en equipo y una rápida capacidad de aprendizaje."</p>
+                </div>
+                <div class="section-card">
+                <img id="cardImage" src="https://biggspark.com/wp-content/uploads/2017/09/Rue21InsideStore1.jpg"
+                    alt="">
+                <h2>Melanie Martinez</h2>
+                <p>Store Manager, RUE21.<br>
+                    "Steven mostró liderazgo y responsabilidad en el manejo de procesos logísticos."</p>
+                </div>
+                <div class="section-card">
+                <img id="cardImage"
+                    src="https://th.bing.com/th/id/OIP.FsVDeUQH3sSk2811QIqr7gHaEK?rs=1&pid=ImgDetMain" alt="">
+                <h2>Andrea Sevillano</h2>
+                <p>Gerente, Across The Board.<br>
+                    "Steven mostró liderazgo y responsabilidad en el manejo de procesos logísticos."</p>
+                </div>
+            </div>
+            </section>
 
+            <section id="mapa">
+                <h2 class="subtitle">Ubicación</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.810640228753!2d-79.92235928476248!3d-2.156331039800545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d71e90d2b63bf%3A0x83cc3f0e70312cb8!2sGuayaquil%2C%20Ecuador!5e0!3m2!1ses!2sus!4v1685353387943!5m2!1ses!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
 
-        <section id="contacto">
-            <h2 class="subtitle">Contacto y Aplicación</h2>
+            <section id="contacto">
+                <h2 class="subtitle">Contacto y Aplicación</h2>
 
-            <form action="#" method="post" enctype="multipart/form-data">
-                <!-- Nombre -->
-                <label for="nombre">Nombre completo:<span style="color:red">*</span></label><br>
-                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo"><br><br>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <!-- Nombre -->
+                    <label for="nombre">Nombre completo:<span style="color:red">*</span></label><br>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo"><br><br>
 
-                <!-- Correo -->
-                <label for="email">Correo electrónico:<span style="color:red">*</span></label><br>
-                <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com"><br><br>
+                    <!-- Correo -->
+                    <label for="email">Correo electrónico:<span style="color:red">*</span></label><br>
+                    <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com"><br><br>
 
-                <!-- Mensaje -->
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="4"
-                    placeholder="Escribe un mensaje o consulta..."></textarea><br><br>
+                    <!-- Mensaje -->
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4"
+                        placeholder="Escribe un mensaje o consulta..."></textarea><br><br>
 
-                <!-- Video -->
-                <label for="video">Sube un video de presentación (opcional):</label><br>
-                <input type="file" id="video" name="video" accept="video/*"><br>
-                <small>Formatos recomendados: MP4, WebM. Duración sugerida: 30-60 segundos.</small><br><br>
+                    <!-- Video -->
+                    <label for="video">Sube un video de presentación (opcional):</label><br>
+                    <input type="file" id="video" name="video" accept="video/*"><br>
+                    <small>Formatos recomendados: MP4, WebM. Duración sugerida: 30-60 segundos.</small><br><br>
 
-                <!-- Imagen -->
-                <label for="imagen">Sube una imagen (opcional):</label><br>
-                <input type="file" id="imagen" name="imagen" accept="image/*"><br>
-                <small>Puedes subir tu foto profesional o una captura de tu proyecto.</small><br><br>
+                    <!-- Imagen -->
+                    <label for="imagen">Sube una imagen (opcional):</label><br>
+                    <input type="file" id="imagen" name="imagen" accept="image/*"><br>
+                    <small>Puedes subir tu foto profesional o una captura de tu proyecto.</small><br><br>
 
-                <!-- Ubicación -->
-                <label for="ubicacion">Ubicación (ciudad o región):</label><br>
-                <input type="text" id="ubicacion" name="ubicacion" placeholder="Ej. Quito, Ecuador"><br><br>
+                    <!-- Ubicación -->
+                    <label for="ubicacion">Ubicación (ciudad o región):</label><br>
+                    <input type="text" id="ubicacion" name="ubicacion" placeholder="Ej. Quito, Ecuador"><br><br>
 
-                <!-- Botón -->
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-
-        <section id="mapa">
-            <h2 class="subtitle">Ubicación</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.810640228753!2d-79.92235928476248!3d-2.156331039800545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d71e90d2b63bf%3A0x83cc3f0e70312cb8!2sGuayaquil%2C%20Ecuador!5e0!3m2!1ses!2sus!4v1685353387943!5m2!1ses!2sus"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
+                    <!-- Botón -->
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
 
     </main>
 
