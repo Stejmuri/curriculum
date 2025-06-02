@@ -22,23 +22,25 @@ textarea {
 }
 
 button {
-  background-color: #007bff;
-  color: white;
+  background-color: #ef4565;
+  color: #fffffe;
   border: none;
   padding: 1rem;
   border-radius: 5px;
   cursor: pointer;
+  font-size: medium;
+  font-style: bold;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #3da9fc;
 }
 
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: hwb(211 10% 75% / 0.595);
-  color: #222;
-  margin: 2%;
+  background: #fffffe;
+  color: #5f6c7b;
+  margin: 2% 2% 0 2%;
   padding: 0;
 }
 
@@ -57,7 +59,7 @@ nav {
   /* Alinea el contenido a los extremos */
   align-items: center;
   /* Centra verticalmente el contenido */
-  background: #2a4d69;
+  background: #094067;
   /* Color de fondo del header */
   /* Agrega espacio alrededor del header */
   border-radius: 12px;
@@ -68,7 +70,7 @@ nav {
 
 
 #header h1 {
-  color: #fff;
+  color: #fffffe;
   /* Color del texto del título */
   margin: 0;
   /* Elimina el margen por defecto */
@@ -77,7 +79,7 @@ nav {
 }
 
 #header .info {
-  color: #fff;
+  color: #fffffe;
   /* Color del texto */
   padding: 50px;
   /* Espacio interno */
@@ -117,7 +119,7 @@ nav {
 #nav li a {
   text-decoration: none;
   /* Quita el subrayado */
-  color: #000;
+  color: #5f6c7b;
   /* Cambia el color según prefieras */
   font-weight: bold;
 }
@@ -145,7 +147,7 @@ nav a:hover {
 h1,
 h2,
 h3 {
-  color: #245e8e;
+  color: #5f6c7b;
   margin-top: 0;
 }
 
@@ -157,7 +159,7 @@ h1 {
 h2 {
   font-size: 1.5em;
   margin-top: 24px;
-  border-bottom: 2px solid #275bc4;
+  border-bottom: 2px solid #094067;
   padding-bottom: 4px;
 }
 
@@ -174,7 +176,7 @@ li {
 }
 
 a {
-  color: #4f8ef7;
+  color: #ef4565;
   text-decoration: none;
 }
 
@@ -183,18 +185,73 @@ a:hover {
 }
 
 #cardImage {
-  width: 100%;
+  width: 90%;
   height: auto;
   border-radius: 8px;
 
 }
 
+/* ---------------------------------------- EDUCACION ---------------------------------------- */
+
+#educacion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Añade margen entre las celdas de la tabla de experiencia */
+#educacion table {
+  border-collapse: separate;
+  border-spacing: 0 1px;
+  /* 10px de espacio vertical entre filas */
+}
+
+#educacion td,
+#educacion th {
+  padding: 10px;
+}
+
+/* ---------------------------------------- EXPERIENCIA ---------------------------------------- */
+
+#experiencia {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Añade margen entre las celdas de la tabla de experiencia */
+#experiencia table {
+  border-collapse: separate;
+  border-spacing: 0 1px;
+  /* 10px de espacio vertical entre filas */
+}
+
+#experiencia td,
+#experiencia th {
+  padding: 10px;
+}
+
+/* ---------------------------------------- JUSTIFICACION DE LA LETRA ---------------------------------------- */
+
+p {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* ---------------------------------------- HABILIDADES Y PROYECTOS ---------------------------------------- */
+
+#ResumenHabilidades {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 
 /* ---------------------------------------- IMAGENES DE HABILIDADES ---------------------------------------- */
 
 .habilidades img {
-  width: 100px;
-  height: 100px;
+  width: 20%;
+  height: 20%;
   object-fit: contain;
   margin: 0 8px;
 }
@@ -204,7 +261,9 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+
 }
 
 /* ---------------------------------------- IDIOMA ---------------------------------------- */
@@ -228,7 +287,7 @@ a:hover {
 
 .progreso {
   height: 100%;
-  background-color: #4caf50;
+  background-color: #ef4565;
   /* Verde para progreso */
   width: 0;
   border-radius: 10px 0 0 10px;
@@ -278,7 +337,7 @@ a:hover {
 .section-card span {
   display: block;
   background-color: #3b6efa;
-  color: #ffffff;
+  color: #5f6c7b;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -289,31 +348,58 @@ a:hover {
 
 .section-card h2 {
   font-size: 24px;
-  color: #333333;
+  color: #5f6c7b;
   margin-bottom: 15px;
 }
 
 
 /* ---------------------------------------- MAPA ----------------------------------------  */
 
-#mapa {
-  width: 100%;
-  border-radius: 50px;
-  margin-top: 20px;
-  display: grid;
-
+#map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 80%;
+  height: 80%;
+  border-radius: 16px;
 }
 
-#mapa iframe {
+#map iframe {
   width: 100%;
-  height: 400px;
+  height: 80%;
   border: none;
-  border-radius: 50px;
-
+  border-radius: 16px;
+  /* Forma cuadrangular con bordes ligeramente redondeados */
 }
 
 .section-card a:hover {
   background-color: #4457ff;
+}
+
+/* ---------------------------------------- CONTACTAME ---------------------------------------- */
+
+#contactame {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#contactame form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+#footer {
+  color: #5f6c7b;
+  padding: 1%;
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
